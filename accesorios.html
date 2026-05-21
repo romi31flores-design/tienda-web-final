@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accesorios - Bebote Indumentaria</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+<header>
+        <h1>INDUMENTARIA PARA BEBOTES</h1>
+        <p>Moda infantil con estilo y diversion</p>
+    </header>
+    <nav>
+    <a href="#"><i class="fa-solid fa-house"></i> Inicio</a>
+    <a href="niñas.html"><i class="fa-solid fa-child-dress"></i> Niñas</a>
+    <a href="niños.html"><i class="fa-solid fa-child"></i> Niños</a>
+    <a href="ofertas.html"><i class="fa-solid fa-tags"></i> Ofertas</a>
+    <a href="contacto.html"><i class="fa-solid fa-phone"></i> Contacto</a>
+    <a href="login.html" class="icono-nav">
+    <i class="fa-solid fa-user"></i>
+    <a href="pedidos.html" class="icono-nav">
+    <i class="fa-solid fa-box"></i>
+    <a href="carrito.html" class="icono-nav">
+    <i class="fa-solid fa-cart-shopping"></i>
+    <span id="contador-carrito">0</span>
+</a>
+</nav>
+<section class="banner-envio">
+    <p>📦 Envíos gratis a partir de $100.000</p>
+</section>
+    <section class="accesorios-container">
+
+        <div class="accesorios-box">
+
+            <h1>Accesorios Infantiles 🎀</h1>
+            <p>Descubrí complementos adorables para completar cada look.</p>
+
+            <div class="accesorios-grid">
+
+                <div class="accesorio-card">
+                    <img src="img/accesorio-nena.jpeg" alt="Medias infantiles">
+                    <h3>Pack Medias</h3>
+                    <p>$8.000</p>
+
+                    <button onclick="agregarCarrito()">
+                        Agregar al carrito
+                    </button>
+
+                    <a href="#" class="btn-producto">
+                        Ver producto
+                    </a>
+                </div>
+
+                <div class="accesorio-card">
+                    <img src="img/plato-silicona.jpeg" alt="Plato de silicona">
+                    <h3>Plato de silicona </h3>
+                    <p>$5.000</p>
+
+                    <button onclick="agregarCarrito()">
+                        Agregar al carrito
+                    </button>
+
+                    <a href="#" class="btn-producto">
+                        Ver producto
+                    </a>
+                </div>
+
+                <div class="accesorio-card">
+                    <img src="img/lentes-sol.jpeg" alt="Lentes de sol">
+                    <h3>Lentes de sol</h3>
+                    <p>$10.000</p>
+
+                    <button onclick="agregarCarrito()">
+                        Agregar al carrito
+                    </button>
+
+                    <a href="#" class="btn-producto">
+                        Ver producto
+                    </a>
+                </div>
+
+            </div>
+
+            <a href="index.html" class="volver-btn">
+                Volver a la tienda
+            </a>
+
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
