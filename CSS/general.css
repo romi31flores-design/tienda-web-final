@@ -58,6 +58,27 @@ button:hover {
     transform: scale(1.05);
     transition: 0.3s;
 }
+/* BOTÓN VOLVER */
+
+.volver-btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 14px 25px;
+
+    background-color: #B89B7A;
+    color: white;
+
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.volver-btn:hover {
+    background-color: #9E8060;
+    transform: scale(1.03);
+}
 
 .footer {
     background-color: #E8DCCB;
