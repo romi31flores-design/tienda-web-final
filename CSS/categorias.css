@@ -1,0 +1,69 @@
+/* =====================================
+    SECCIÓN CATEGORÍAS
+    Muestra los accesos a Niñas, Niños y Accesorios
+===================================== */
+
+.categorias {
+    background-color: #F5EDE3;
+    padding: 60px;
+    text-align: center;
+}
+
+/* =====================================
+    GRILLA DE CATEGORÍAS
+    Usa Grid para organizar las tarjetas
+===================================== */
+
+.grid-categorias {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 30px;
+}
+
+/* =====================================
+    ENLACE DE CATEGORÍA
+    Saca el subrayado y mantiene el color normal
+===================================== */
+
+.categoria-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* =====================================
+    TARJETA DE CATEGORÍA
+===================================== */
+
+.categoria-card {
+    background-color: #E8DCCB;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+    min-height: 180px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* =====================================
+    EFECTO AL PASAR EL MOUSE
+===================================== */
+
+.categoria-card:hover {
+    transform: translateY(-8px);
+    transition: 0.3s;
+}
+
+/* =====================================
+    RESPONSIVE
+===================================== */
+
+@media (max-width: 768px) {
+
+    .grid-categorias {
+        grid-template-columns: 1fr;
+    }
+
+}
