@@ -1,136 +1,193 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
+    <!-- Configuración básica de la página -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="index.css">
+    <title>Indumentaria para Bebotes</title>
+
+    <!-- Hoja de estilos externa -->
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/index.css">
+
+    <!-- Iconos de Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <script src="script.js"></script>
 </head>
+
 <body>
+
+    <!-- HEADER: encabezado del sitio -->
     <header>
         <h1>INDUMENTARIA PARA BEBOTES</h1>
-        <p>Moda infantil con estilo y diversion</p>
+        <p>Moda infantil con estilo y diversión</p>
     </header>
+
+    <!-- NAV: menú principal de navegación -->
     <nav>
-    <a href="#"><i class="fa-solid fa-house"></i> Inicio</a>
-    <a href="niñas.html"><i class="fa-solid fa-child-dress"></i> Niñas</a>
-    <a href="niños.html"><i class="fa-solid fa-child"></i> Niños</a>
-    <a href="ofertas.html"><i class="fa-solid fa-tags"></i> Ofertas</a>
-    <a href="contacto.html"><i class="fa-solid fa-phone"></i> Contacto</a>
-    <a href="login.html" class="icono-nav">
-    <i class="fa-solid fa-user"></i>
-    <a href="pedidos.html" class="icono-nav">
-    <i class="fa-solid fa-box"></i>
-    <a href="carrito.html" class="icono-nav">
-    <i class="fa-solid fa-cart-shopping"></i>
-    <span id="contador-carrito">0</span>
-</a>
+        <a href="index.html">
+            <i class="fa-solid fa-house"></i> Inicio
+        </a>
 
-</nav>
-<section class="banner-envio">
-    <p>📦 Envíos gratis a partir de $100.000</p>
-</section>
-    <main>
-        <section>
-            <section class="hero">
-<section class="hero">
+        <a href="niñas.html">
+            <i class="fa-solid fa-child-dress"></i> Niñas
+        </a>
 
-    <section class="buscador">
-        <input type="text" placeholder="Buscar productos...">
-        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        <a href="niños.html">
+            <i class="fa-solid fa-child"></i> Niños
+        </a>
+
+        <a href="ofertas.html">
+            <i class="fa-solid fa-tags"></i> Ofertas
+        </a>
+
+        <a href="contacto.html">
+            <i class="fa-solid fa-phone"></i> Contacto
+        </a>
+
+        <a href="login.html" class="icono-nav">
+            <i class="fa-solid fa-user"></i>
+        </a>
+
+        <a href="pedidos.html" class="icono-nav">
+            <i class="fa-solid fa-box"></i>
+        </a>
+
+        <a href="carrito.html" class="icono-nav">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span id="contador-carrito">0</span>
+        </a>
+    </nav>
+
+    <!-- BANNER: aviso de envíos -->
+    <section class="banner-envio">
+        <p>📦 Envíos gratis a partir de $100.000</p>
     </section>
-    <div class="hero-texto">
-        <h2>Nueva Colección 2026</h2>
-        <p>Descubrí prendas cómodas, modernas y adorables para los más pequeños.</p>
-        <a href="login.html" class="btn-comprar">Comprar ahora</a>
-    </div>
 
-</section>
-    
-<section class="categorias">
-    <h2>Categorías Destacadas</h2>
+    <!-- MAIN: contenido principal -->
+    <main>
 
-    <div class="grid-categorias">
+        <!-- HERO: presentación principal de la tienda -->
+        <section class="hero">
 
-        <a href="niñas.html" class="categoria-link">
-    <div class="categoria-card">
-        <h3>Niñas</h3>
-        <p>Vestidos, conjuntos y más.</p>
-    </div>
-</a>
+            <!-- Buscador visual de productos -->
+            <div class="buscador">
+                <input type="text" id="buscador-productos" placeholder="Buscar productos...">
+                <button id="btn-buscar">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
 
-<a href="niños.html" class="categoria-link">
-    <div class="categoria-card">
-        <h3>Niños</h3>
-        <p>Moda cómoda y divertida.</p>
-    </div>
-</a>
-<a href="accesorios.html" class="categoria-link">
-    <div class="categoria-card">
-        <h3>Accesorios</h3>
-        <p>Complementos adorables.</p>
-    </div>
-</a>
+            <div class="hero-texto">
+                <h2>Nueva Colección 2026</h2>
+                <p>Descubrí prendas cómodas, modernas y adorables para los más pequeños.</p>
+                <a href="login.html" class="btn-comprar">Comprar ahora</a>
+            </div>
 
-    </div>
-</section>
-
-<section class="banner-descuento">
-    <h2>20% OFF en la nueva colección</h2>
-    <p>Promoción válida por tiempo limitado</p>
-    <a href="ofertas.html" class="btn-oferta">
-    Ver ofertas</a>
-</section>
-
-</section>
         </section>
-        <section class="Productos">
+
+        <!-- CATEGORÍAS: accesos rápidos a secciones -->
+        <section class="categorias">
+            <h2>Categorías Destacadas</h2>
+
+            <div class="grid-categorias">
+
+                <a href="niñas.html" class="categoria-link">
+                    <div class="categoria-card">
+                        <h3>Niñas</h3>
+                        <p>Vestidos, conjuntos y más.</p>
+                    </div>
+                </a>
+
+                <a href="niños.html" class="categoria-link">
+                    <div class="categoria-card">
+                        <h3>Niños</h3>
+                        <p>Moda cómoda y divertida.</p>
+                    </div>
+                </a>
+
+                <a href="accesorios.html" class="categoria-link">
+                    <div class="categoria-card">
+                        <h3>Accesorios</h3>
+                        <p>Complementos adorables.</p>
+                    </div>
+                </a>
+
+            </div>
+        </section>
+
+        <!-- BANNER DE DESCUENTO -->
+        <section class="banner-descuento">
+            <h2>20% OFF en la nueva colección</h2>
+            <p>Promoción válida por tiempo limitado</p>
+            <a href="ofertas.html" class="btn-oferta">Ver ofertas</a>
+        </section>
+
+        <!-- PRODUCTOS: tarjetas principales -->
+        <section class="productos">
             <h2>Nuestros productos</h2>
+
             <div class="contenedor-productos">
-                <div class="card-producto">
+
+                <article class="card-producto">
                     <span class="badge">OFERTA</span>
-                    <img src="img/conjunto.jpeg" alt="Conjunto infantil">
+                    <img src="img/conjunto.jpeg" alt="Conjunto infantil de niño">
+
                     <h3>Conjunto Niño</h3>
                     <span class="precio">$32.000</span>
-                    <p>ideal para jugar y divertirse</p>
-                    <button onclick="agregarCarrito()">Agregar al carrito</button>
+                    <p>Ideal para jugar y divertirse.</p>
+
+                    <button class="btn-agregar">Agregar al carrito</button>
                     <a href="producto.conjunto.html" class="btn-producto">Ver producto</a>
-                </div> 
-            <div class="card-producto">
-                <img src="img/vestido.jpeg" alt="Vestido termico">
-                <span class="badge">NUEVO</span>
-                <h3>Vestido darlon termico</h3>
-                <p>Diseño adorable y super comodo</p>
-                <span class="precio">$25.000</span>
-                <button onclick="agregarCarrito()">Agregar al carrito</button>
-                <a href="producto.vestido.html" class="btn-producto">Ver producto</a>
-</a>
+                </article>
+
+                <article class="card-producto">
+                    <span class="badge">NUEVO</span>
+                    <img src="img/vestido.jpeg" alt="Vestido térmico infantil">
+
+                    <h3>Vestido darlon térmico</h3>
+                    <span class="precio">$25.000</span>
+                    <p>Diseño adorable y súper cómodo.</p>
+
+                    <button class="btn-agregar">Agregar al carrito</button>
+                    <a href="producto.vestido.html" class="btn-producto">Ver producto</a>
+                </article>
+
+                <article class="card-producto">
+                    <span class="badge">-20%</span>
+                    <img src="img/abrigo.jpeg" alt="Abrigo infantil">
+
+                    <h3>Abrigo kids</h3>
+                    <span class="precio">$45.000</span>
+                    <p>Súper cómodo y abrigado.</p>
+
+                    <button class="btn-agregar">Agregar al carrito</button>
+                    <a href="producto.abrigo.html" class="btn-producto">Ver producto</a>
+                </article>
+
             </div>
-            <div class="card-producto">
-                <span class="badge">-20%</span>
-                <img src="img/abrigo.jpeg" alt="Abrigo">
-                <h3>Abrigo kids</h3>
-                <p>Super comodo y abrigado</p>
-                <span class="precio">$45.000</span>
-                <button onclick="agregarCarrito()">Agregar al carrito</button>
-                <a href="producto.abrigo.html" class="btn-producto">Ver producto</a>
-            </div>
-        </div>
         </section>
+
+        <!-- NEWSLETTER: formulario simple de suscripción -->
+        <section class="newsletter">
+            <h2>Recibí nuestras novedades</h2>
+            <p>Enterate primero de nuevas colecciones y ofertas especiales.</p>
+
+            <form id="form-newsletter">
+                <label for="email-newsletter">Correo electrónico</label>
+                <input type="email" id="email-newsletter" placeholder="Ingresá tu email">
+
+                <button type="submit">Suscribirme</button>
+            </form>
+
+            <p id="mensaje-newsletter"></p>
+        </section>
+
     </main>
 
-    <section class="newsletter">
-    <h2>Recibí nuestras novedades</h2>
-    <p>Enterate primero de nuevas colecciones y ofertas especiales.</p>
-
-    <form>
-        <input type="email" placeholder="Ingresá tu email">
-        <button type="submit">Suscribirme</button>
-    </form>
-</section>
+    <!-- FOOTER: información final del sitio -->
     <footer class="footer">
+
         <div>
             <h3>Bebote Indumentaria</h3>
             <p>Moda infantil cómoda, tierna y moderna.</p>
@@ -147,7 +204,11 @@
             <p>Lunes a sábado</p>
             <p>9:00 a 21:00 hs</p>
         </div>
+
     </footer>
+
+    <!-- JavaScript externo -->
+    <script src="js/index.js"></script>
 
 </body>
 
