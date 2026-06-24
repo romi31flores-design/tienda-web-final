@@ -1,0 +1,144 @@
+/* PAGINA PRINCIPAL */
+
+.banner-envio {
+    background-color: #B89B7A;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.hero {
+    background-image: linear-gradient(
+        rgba(245, 237, 227, 0.65),
+        rgba(245, 237, 227, 0.65)
+    ),
+    url("../img/portada-original.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    min-height: 700px;
+    padding: 60px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    text-align: center;
+}
+
+.hero-texto h2 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.hero-texto p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.btn-comprar {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 35px;
+    background-color: #B89B7A;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-comprar:hover {
+    background-color: #9E8060;
+    transform: scale(1.05);
+}
+
+.buscador {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.buscador input {
+    width: 350px;
+    padding: 12px;
+    border: 2px solid #b58b63;
+    border-radius: 25px;
+    outline: none;
+}
+
+.buscador button {
+    background-color: #b58b63;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 50%;
+}
+
+.banner-descuento {
+    background-color: #b58b63;
+    color: white;
+    text-align: center;
+    padding: 40px;
+}
+
+.banner-descuento h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.btn-oferta {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 35px;
+    background-color: white;
+    color: #B89B7A;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.newsletter {
+    background-color: #efe1d0;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.newsletter form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.newsletter input {
+    width: 300px;
+    padding: 12px;
+    border: 2px solid #f48fb1;
+    border-radius: 25px;
+}
+
+.newsletter button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    background-color: #b58b63;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .hero-texto h2 {
+        font-size: 32px;
+    }
+
+    .newsletter form {
+        flex-direction: column;
+        align-items: center;
+    }
+}
