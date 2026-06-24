@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <!-- Configuración básica -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Pedidos - Bebote Indumentaria</title>
+
+```
+<!-- Hojas de estilo -->
+<link rel="stylesheet" href="../CSS/general.css">
+<link rel="stylesheet" href="../CSS/pedidos.css">
+
+<!-- Iconos Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+```
+
+</head>
+
+<body>
+
+```
+<!-- ENCABEZADO -->
+<header>
+    <h1>INDUMENTARIA PARA BEBOTES</h1>
+    <p>Moda infantil con estilo y diversión</p>
+</header>
+
+<!-- MENÚ DE NAVEGACIÓN -->
+<nav>
+    <a href="index.html"><i class="fa-solid fa-house"></i> Inicio</a>
+    <a href="niñas.html"><i class="fa-solid fa-child-dress"></i> Niñas</a>
+    <a href="niños.html"><i class="fa-solid fa-child"></i> Niños</a>
+    <a href="ofertas.html"><i class="fa-solid fa-tags"></i> Ofertas</a>
+    <a href="contacto.html"><i class="fa-solid fa-phone"></i> Contacto</a>
+
+    <a href="login.html" class="icono-nav">
+        <i class="fa-solid fa-user"></i>
+    </a>
+
+    <a href="pedidos.html" class="icono-nav">
+        <i class="fa-solid fa-box"></i>
+    </a>
+
+    <a href="carrito.html" class="icono-nav">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span id="contador-carrito">0</span>
+    </a>
+</nav>
+
+<!-- BANNER DE ENVÍOS -->
+<section class="banner-envio">
+    <p>📦 Envíos gratis a partir de $100.000</p>
+</section>
+
+<!-- CONTENIDO PRINCIPAL -->
+<main>
+
+    <!-- SECCIÓN PEDIDOS -->
+    <section class="pedidos-container">
+
+        <div class="pedidos-box">
+
+            <h2>Mis Pedidos 📦</h2>
+            <p>Consultá el estado de tus compras.</p>
+
+            <!-- MENSAJE CUANDO NO HAY PEDIDOS -->
+            <div class="sin-pedidos">
+
+                <i class="fa-solid fa-box-open"></i>
+
+                <h3>Todavía no tenés pedidos</h3>
+
+                <p>
+                    Cuando realices una compra,
+                    aparecerá acá.
+                </p>
+
+            </div>
+
+            <!-- BOTÓN VOLVER -->
+            <a href="index.html" class="volver-btn">
+                Volver a la tienda
+            </a>
+
+        </div>
+
+    </section>
+
+</main>
+
+<!-- JAVASCRIPT -->
+<script src="JS/pedidos.js"></script>
+```
+
+</body>
+
+</html>
