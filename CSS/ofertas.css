@@ -108,7 +108,28 @@
 
     color: #B89B7A;
 }
+/* =====================================
+   BOTÓN AGREGAR AL CARRITO EN OFERTAS
+===================================== */
 
+.oferta-card .btn-agregar {
+    margin-top: 12px;
+    padding: 10px 20px;
+
+    background-color: #B89B7A;
+    color: white;
+
+    border: none;
+    border-radius: 20px;
+
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.oferta-card .btn-agregar:hover {
+    background-color: #9E8060;
+    transition: 0.3s;
+}
 /* =====================================
     RESPONSIVE
 ===================================== */
