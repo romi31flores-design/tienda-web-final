@@ -13,6 +13,20 @@ font-size: 18px;
 letter-spacing: 1px;
 }
 
+.banner-envio p {
+    animation: mover 10s linear infinite;
+}
+
+@keyframes mover {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(100%);
+    }
+}
+
 /* =====================================
 HERO PRINCIPAL
 Imagen de portada y presentación
