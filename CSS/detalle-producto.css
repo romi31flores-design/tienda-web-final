@@ -1,6 +1,6 @@
 /* =====================================
-   CONTENEDOR DEL DETALLE
-   Centra la ficha del producto
+    CONTENEDOR DEL DETALLE
+    Centra la ficha del producto
 ===================================== */
 
 .detalle-container {
@@ -16,8 +16,8 @@
 }
 
 /* =====================================
-   CAJA PRINCIPAL DEL PRODUCTO
-   Divide imagen e información en columnas
+    CAJA PRINCIPAL DEL PRODUCTO
+    Divide imagen e información en columnas
 ===================================== */
 
 .detalle-box {
@@ -37,7 +37,7 @@
 }
 
 /* =====================================
-   IMAGEN DEL PRODUCTO
+    IMAGEN DEL PRODUCTO
 ===================================== */
 
 .detalle-imagen img {
@@ -50,7 +50,7 @@
 }
 
 /* =====================================
-   INFORMACIÓN DEL PRODUCTO
+    INFORMACIÓN DEL PRODUCTO
 ===================================== */
 
 .detalle-info {
@@ -58,7 +58,7 @@
 }
 
 /* =====================================
-   TÍTULO DEL PRODUCTO
+    TÍTULO DEL PRODUCTO
 ===================================== */
 
 .detalle-info h2 {
@@ -67,7 +67,7 @@
 }
 
 /* =====================================
-   PRECIO DEL PRODUCTO
+    PRECIO DEL PRODUCTO
 ===================================== */
 
 .detalle-precio {
@@ -79,7 +79,7 @@
 }
 
 /* =====================================
-   DESCRIPCIÓN DEL PRODUCTO
+    DESCRIPCIÓN DEL PRODUCTO
 ===================================== */
 
 .detalle-descripcion {
@@ -88,7 +88,7 @@
 }
 
 /* =====================================
-   COLORES DISPONIBLES
+    COLORES DISPONIBLES
 ===================================== */
 
 .colores {
@@ -99,7 +99,7 @@
 }
 
 /* =====================================
-   CÍRCULOS DE COLOR
+    CÍRCULOS DE COLOR
 ===================================== */
 
 .color {
@@ -136,7 +136,7 @@
 }
 
 /* =====================================
-   TALLES DISPONIBLES
+    TALLES DISPONIBLES
 ===================================== */
 
 .talles {
@@ -147,7 +147,7 @@
 }
 
 /* =====================================
-   BOTONES DE TALLES
+    BOTONES DE TALLES
 ===================================== */
 
 .talles button {
@@ -164,7 +164,7 @@
 }
 
 /* =====================================
-   EFECTO DE LOS TALLES
+    EFECTO DE LOS TALLES
 ===================================== */
 
 .talles button:hover {
@@ -172,7 +172,7 @@
 }
 
 /* =====================================
-   BOTÓN AGREGAR AL CARRITO
+    BOTÓN AGREGAR AL CARRITO
 ===================================== */
 
 .btn-agregar {
@@ -196,7 +196,7 @@
 }
 
 /* =====================================
-   EFECTO DEL BOTÓN AGREGAR
+    EFECTO DEL BOTÓN AGREGAR
 ===================================== */
 
 .btn-agregar:hover {
@@ -205,8 +205,8 @@
 }
 
 /* =====================================
-   RESPONSIVE
-   En pantallas chicas se muestra en una columna
+    RESPONSIVE
+    En pantallas chicas se muestra en una columna
 ===================================== */
 
 @media (max-width: 768px) {
