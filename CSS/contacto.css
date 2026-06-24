@@ -1,0 +1,145 @@
+/* =====================================
+    CONTENEDOR PRINCIPAL DE CONTACTO
+    Centra el formulario en pantalla
+===================================== */
+
+.contacto-container {
+    min-height: 100vh;
+
+    background-image: linear-gradient(
+        rgba(250, 247, 242, 0.75),
+        rgba(250, 247, 242, 0.75)
+    ),
+    url("../img/portada.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 40px;
+}
+
+/* =====================================
+    CAJA PRINCIPAL DEL CONTACTO
+===================================== */
+
+.contacto-box {
+    background-color: white;
+
+    width: 550px;
+
+    padding: 40px;
+
+    border-radius: 25px;
+
+    box-shadow: 0px 6px 20px rgba(0,0,0,0.15);
+
+    text-align: center;
+}
+
+/* =====================================
+    INFORMACIÓN DE CONTACTO
+===================================== */
+
+.contacto-info {
+    background-color: #F5EDE3;
+
+    padding: 20px;
+
+    border-radius: 18px;
+
+    margin: 25px 0;
+
+    text-align: left;
+}
+
+/* =====================================
+    ICONOS DE CONTACTO
+===================================== */
+
+.contacto-info i {
+    color: #8B6F57;
+    margin-right: 10px;
+}
+
+/* =====================================
+    FORMULARIO DE CONTACTO
+===================================== */
+
+.contacto-box form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* =====================================
+    INPUTS Y TEXTAREA
+===================================== */
+
+.contacto-box input,
+.contacto-box textarea {
+    padding: 14px;
+
+    border: 2px solid #E8DCCB;
+
+    border-radius: 15px;
+
+    outline: none;
+
+    font-size: 16px;
+}
+
+/* =====================================
+    ÁREA DE MENSAJE
+===================================== */
+
+.contacto-box textarea {
+    min-height: 120px;
+    resize: none;
+}
+
+/* =====================================
+    BOTÓN ENVIAR
+===================================== */
+
+.contacto-box button {
+    background-color: #B89B7A;
+
+    color: white;
+
+    border: none;
+
+    padding: 14px;
+
+    border-radius: 20px;
+
+    cursor: pointer;
+
+    font-size: 16px;
+}
+
+/* =====================================
+    EFECTO HOVER DEL BOTÓN
+===================================== */
+
+.contacto-box button:hover {
+    background-color: #9E8060;
+    transition: 0.3s;
+}
+
+/* =====================================
+    RESPONSIVE
+===================================== */
+
+@media (max-width: 768px) {
+
+    .contacto-box {
+        width: 95%;
+        padding: 25px;
+    }
+
+}
