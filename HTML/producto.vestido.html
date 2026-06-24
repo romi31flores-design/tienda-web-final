@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Configuración básica del documento -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Vestido Darlon - Bebote Indumentaria</title>
+
+    <!-- CSS externos -->
+    <link rel="stylesheet" href="../CSS/general.css">
+    <link rel="stylesheet" href="../CSS/detalle-producto.css">
+
+    <!-- Librería de iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- HEADER: encabezado principal -->
+    <header>
+        <h1>INDUMENTARIA PARA BEBOTES</h1>
+        <p>Moda infantil con estilo y diversión</p>
+    </header>
+
+    <!-- NAV: menú de navegación -->
+    <nav>
+
+        <a href="index.html">
+            <i class="fa-solid fa-house"></i> Inicio
+        </a>
+
+        <a href="niñas.html">
+            <i class="fa-solid fa-child-dress"></i> Niñas
+        </a>
+
+        <a href="niños.html">
+            <i class="fa-solid fa-child"></i> Niños
+        </a>
+
+        <a href="ofertas.html">
+            <i class="fa-solid fa-tags"></i> Ofertas
+        </a>
+
+        <a href="contacto.html">
+            <i class="fa-solid fa-phone"></i> Contacto
+        </a>
+
+        <a href="login.html" class="icono-nav">
+            <i class="fa-solid fa-user"></i>
+        </a>
+
+        <a href="pedidos.html" class="icono-nav">
+            <i class="fa-solid fa-box"></i>
+        </a>
+
+        <a href="carrito.html" class="icono-nav">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span id="contador-carrito">0</span>
+        </a>
+
+    </nav>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main>
+
+        <!-- DETALLE DEL PRODUCTO -->
+        <section class="detalle-container">
+
+            <article class="detalle-box">
+
+                <!-- Imagen del producto -->
+                <div class="detalle-imagen">
+
+                    <img
+                        src="../img/vestido.jpeg"
+                        alt="Vestido Darlon térmico infantil"
+                    >
+
+                </div>
+
+                <!-- Información del producto -->
+                <div class="detalle-info">
+
+                    <h2>Vestido Darlon Térmico</h2>
+
+                    <p class="detalle-precio">
+                        $25.000
+                    </p>
+
+                    <p class="detalle-descripcion">
+                        Vestido infantil cómodo, delicado y abrigado.
+                        Ideal para días frescos, eventos especiales
+                        o para un look adorable con mucho estilo.
+                    </p>
+
+                    <!-- Colores disponibles -->
+                    <h3>Colores disponibles</h3>
+
+                    <div class="colores">
+
+                        <span class="color beige"></span>
+
+                        <span class="color marron"></span>
+
+                        <span class="color bordo"></span>
+
+                    </div>
+
+                    <!-- Talles disponibles -->
+                    <h3>Talles disponibles</h3>
+
+                    <div class="talles">
+
+                        <button type="button">2</button>
+                        <button type="button">4</button>
+                        <button type="button">6</button>
+                        <button type="button">8</button>
+                        <button type="button">10</button>
+
+                    </div>
+
+                    <!-- Botón agregar al carrito -->
+                    <button type="button" class="btn-agregar">
+                        Agregar al carrito
+                    </button>
+
+                    <!-- Botón volver -->
+                    <a href="index.html" class="volver-btn">
+                        Volver a la tienda
+                    </a>
+
+                </div>
+
+            </article>
+
+        </section>
+
+    </main>
+
+    <!-- JavaScript -->
+    <script src="JS/carrito.js"></script>
+
+</body>
+
+</html>
