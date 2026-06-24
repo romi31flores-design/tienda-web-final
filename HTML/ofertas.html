@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Configuración básica del documento -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ofertas - Bebote Indumentaria</title>
+
+    <!-- CSS externos -->
+    <link rel="stylesheet" href="../CSS/general.css">
+    <link rel="stylesheet" href="../CSS/ofertas.css">
+
+    <!-- Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- HEADER: encabezado principal -->
+    <header>
+        <h1>INDUMENTARIA PARA BEBOTES</h1>
+        <p>Moda infantil con estilo y diversión</p>
+    </header>
+
+    <!-- NAV: menú de navegación -->
+    <nav>
+        <a href="index.html"><i class="fa-solid fa-house"></i> Inicio</a>
+        <a href="niñas.html"><i class="fa-solid fa-child-dress"></i> Niñas</a>
+        <a href="niños.html"><i class="fa-solid fa-child"></i> Niños</a>
+        <a href="ofertas.html"><i class="fa-solid fa-tags"></i> Ofertas</a>
+        <a href="contacto.html"><i class="fa-solid fa-phone"></i> Contacto</a>
+        <a href="login.html" class="icono-nav"><i class="fa-solid fa-user"></i></a>
+        <a href="pedidos.html" class="icono-nav"><i class="fa-solid fa-box"></i></a>
+
+        <a href="carrito.html" class="icono-nav">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span id="contador-carrito">0</span>
+        </a>
+    </nav>
+
+    <!-- BANNER DE ENVÍO -->
+    <section class="banner-envio">
+        <p>📦 Envíos gratis a partir de $100.000</p>
+    </section>
+
+    <!-- MAIN: contenido principal -->
+    <main>
+
+        <!-- SECCIÓN OFERTAS -->
+        <section class="ofertas-container">
+
+            <div class="ofertas-box">
+
+                <h2>Ofertas Especiales 🔥</h2>
+                <p>Aprovechá nuestros descuentos por tiempo limitado.</p>
+
+                <!-- GRID DE PRODUCTOS EN OFERTA -->
+                <div class="ofertas-grid">
+
+                    <article class="oferta-card">
+                        <span class="badge">-20%</span>
+                        <img src="img/Remera overside.jpeg" alt="Remera oversize infantil">
+
+                        <h3>Remera</h3>
+                        <p><del>$20.000</del> $10.000</p>
+
+                        <button type="button" class="btn-agregar">
+                            Agregar al carrito
+                        </button>
+                    </article>
+
+                    <article class="oferta-card">
+                        <span class="badge">-15%</span>
+                        <img src="img/Cancan coquete.jpeg" alt="Cancan de algodón infantil">
+
+                        <h3>Cancan de algodón</h3>
+                        <p><del>$20.000</del> $15.000</p>
+
+                        <button type="button" class="btn-agregar">
+                            Agregar al carrito
+                        </button>
+                    </article>
+
+                    <article class="oferta-card">
+                        <span class="badge">-30%</span>
+                        <img src="img/Baggy-Jeans.jpeg" alt="Baggy jeans infantil">
+
+                        <h3>Baggy Jeans</h3>
+                        <p><del>$50.000</del> $35.000</p>
+
+                        <button type="button" class="btn-agregar">
+                            Agregar al carrito
+                        </button>
+                    </article>
+
+                </div>
+
+                <a href="index.html" class="volver-btn">Volver a la tienda</a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>© 2026 Bebote Indumentaria</p>
+    </footer>
+
+    <!-- JavaScript externo -->
+    <script src="JS/carrito.js"></script>
+
+</body>
+
+</html>
