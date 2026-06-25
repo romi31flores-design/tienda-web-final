@@ -1,60 +1,205 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
+
+    <!-- =====================================
+        CONFIGURACIÓN DE LA PÁGINA
+    ====================================== -->
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Contacto - Bebote Indumentaria</title>
+
+    <!-- HOJAS DE ESTILO -->
     <link rel="stylesheet" href="../CSS/general.css">
     <link rel="stylesheet" href="../CSS/contacto.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- ICONOS FONT AWESOME -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
+
 <body>
-<header>
+
+    <!-- =====================================
+        HEADER
+    ====================================== -->
+
+    <header>
+
         <h1>INDUMENTARIA PARA BEBOTES</h1>
-        <p>Moda infantil con estilo y diversion</p>
+
+        <p>Moda infantil con estilo y diversión</p>
+
     </header>
+
+    <!-- =====================================
+        MENÚ DE NAVEGACIÓN
+    ====================================== -->
+
     <nav>
-    <a href="#"><i class="fa-solid fa-house"></i> Inicio</a>
-    <a href="niñas.html"><i class="fa-solid fa-child-dress"></i> Niñas</a>
-    <a href="niños.html"><i class="fa-solid fa-child"></i> Niños</a>
-    <a href="ofertas.html"><i class="fa-solid fa-tags"></i> Ofertas</a>
-    <a href="contacto.html"><i class="fa-solid fa-phone"></i> Contacto</a>
-    <a href="login.html" class="icono-nav">
-    <i class="fa-solid fa-user"></i>
-    <a href="pedidos.html" class="icono-nav">
-    <i class="fa-solid fa-box"></i>
-    <a href="carrito.html" class="icono-nav">
-    <i class="fa-solid fa-cart-shopping"></i>
-    <span id="contador-carrito">0</span>
-</a>
-</nav>
-<section class="banner-envio">
-    <p>📦 Envíos gratis a partir de $100.000</p>
-</section>
+
+        <a href="index.html">
+            <i class="fa-solid fa-house"></i> Inicio
+        </a>
+
+        <a href="niñas.html">
+            <i class="fa-solid fa-child-dress"></i> Niñas
+        </a>
+
+        <a href="niños.html">
+            <i class="fa-solid fa-child"></i> Niños
+        </a>
+
+        <a href="ofertas.html">
+            <i class="fa-solid fa-tags"></i> Ofertas
+        </a>
+
+        <a href="contacto.html">
+            <i class="fa-solid fa-phone"></i> Contacto
+        </a>
+
+        <a href="login.html" class="icono-nav">
+            <i class="fa-solid fa-user"></i>
+        </a>
+
+        <a href="pedidos.html" class="icono-nav">
+            <i class="fa-solid fa-box"></i>
+        </a>
+
+        <a href="carrito.html" class="icono-nav">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span id="contador-carrito">0</span>
+        </a>
+
+    </nav>
+
+    <!-- =====================================
+        BANNER DE ENVÍOS
+    ====================================== -->
+
+    <section class="banner-envio">
+
+        <p>📦 Envíos gratis a partir de $100.000</p>
+
+    </section>
+
+    <!-- =====================================
+        SECCIÓN CONTACTO
+    ====================================== -->
+
     <section class="contacto-container">
+
         <div class="contacto-box">
 
             <h1>Contacto</h1>
-            <p>Escribinos por consultas, talles o pedidos especiales.</p>
+
+            <p>
+                Escribinos por consultas, talles o pedidos especiales.
+            </p>
+
+            <!-- =====================================
+                INFORMACIÓN DE CONTACTO
+            ====================================== -->
 
             <div class="contacto-info">
-                <p><i class="fa-solid fa-phone"></i> WhatsApp: 387 000 0000</p>
-                <p><i class="fa-solid fa-envelope"></i> Email: contacto@bebote.com</p>
-                <p><i class="fa-brands fa-instagram"></i> Instagram: @bebote.indumentaria</p>
+
+                <p>
+                    <i class="fa-solid fa-phone"></i>
+                    WhatsApp: 387 000 0000
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-envelope"></i>
+                    Email: contacto@bebote.com
+                </p>
+
+                <p>
+                    <i class="fa-brands fa-instagram"></i>
+                    Instagram: @bebote.indumentaria
+                </p>
+
             </div>
 
-            <form>
-                <input type="text" placeholder="Nombre completo">
-                <input type="email" placeholder="Correo electrónico">
-                <textarea placeholder="Escribí tu mensaje"></textarea>
+            <!-- =====================================
+                FORMULARIO DE CONTACTO
+            ====================================== -->
 
-                <button type="submit">Enviar mensaje</button>
+            <form id="form-contacto">
+
+                <!-- Nombre -->
+
+                <label for="nombre">
+                    Nombre completo
+                </label>
+
+                <input
+                    type="text"
+                    id="nombre"
+                    placeholder="Nombre completo"
+                    required>
+
+                <!-- Correo -->
+
+                <label for="email">
+                    Correo electrónico
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Correo electrónico"
+                    required>
+
+                <!-- Mensaje -->
+
+                <label for="mensaje">
+                    Mensaje
+                </label>
+
+                <textarea
+                    id="mensaje"
+                    placeholder="Escribí tu mensaje"
+                    required>
+                </textarea>
+
+                <!-- Botón -->
+
+                <button type="submit">
+
+                    Enviar mensaje
+
+                </button>
+
+                <!-- Mensaje generado por JavaScript -->
+
+                <p id="mensaje-contacto"></p>
+
             </form>
 
-            <a href="index.html" class="volver-btn">Volver a la tienda</a>
+            <!-- =====================================
+                BOTÓN VOLVER
+            ====================================== -->
+
+            <a href="index.html" class="volver-btn">
+
+                Volver a la tienda
+
+            </a>
 
         </div>
+
     </section>
 
+    <!-- =====================================
+        JAVASCRIPT
+    ====================================== -->
+
+    <script src="../JS/contacto.js"></script>
+
 </body>
+
 </html>
