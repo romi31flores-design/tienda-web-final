@@ -1,39 +1,32 @@
 /* =====================================
    CARRITO DE COMPRAS
-   Este archivo maneja los botones
-   "Agregar al carrito"
 ===================================== */
 
-/* Seleccionamos el contador del carrito */
 const contadorCarrito = document.querySelector("#contador-carrito");
-
-/* Seleccionamos todos los botones que tengan la clase btn-agregar */
 const botonesAgregar = document.querySelectorAll(".btn-agregar");
 
-/* Variable para contar productos agregados */
 let cantidadProductos = 0;
 
-/* =====================================
-   FUNCIÓN PARA ACTUALIZAR EL CONTADOR
-===================================== */
-
+/* Actualiza el número del carrito */
 function actualizarContador() {
     contadorCarrito.textContent = cantidadProductos;
 }
 
-/* =====================================
-   EVENTO CLICK EN CADA BOTÓN
-===================================== */
+/* Muestra un mensaje en consola */
+function mostrarMensaje() {
+    console.log("Producto agregado al carrito");
+}
 
+/* Recorremos todos los botones */
 botonesAgregar.forEach(function(boton) {
 
     boton.addEventListener("click", function() {
 
-        cantidadProductos = cantidadProductos + 1;
+        cantidadProductos++;
 
         actualizarContador();
 
-        alert("Producto agregado al carrito");
+        mostrarMensaje();
 
     });
 
