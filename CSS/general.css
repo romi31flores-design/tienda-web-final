@@ -100,6 +100,32 @@ button:hover {
     margin-bottom: 5px;
     color: #555;
 }
+/* BANNER DE ENVÍO ANIMADO */
+
+.banner-envio {
+    background-color: #B89B7A;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 1px;
+    overflow: hidden;
+}
+
+.banner-envio p {
+    animation: mover-banner 8s linear infinite;
+}
+
+@keyframes mover-banner {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(100%);
+    }
+}
 
 @media (max-width: 768px) {
     nav {

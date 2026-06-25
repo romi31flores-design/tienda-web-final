@@ -1,33 +1,4 @@
 /* =====================================
-BANNER DE ENVÍOS GRATIS
-Muestra un mensaje promocional
-===================================== */
-
-.banner-envio {
-background-color: #B89B7A;
-color: white;
-text-align: center;
-padding: 12px;
-font-weight: bold;
-font-size: 18px;
-letter-spacing: 1px;
-}
-
-.banner-envio p {
-    animation: mover 10s linear infinite;
-}
-
-@keyframes mover {
-    from {
-        transform: translateX(-100%);
-    }
-
-    to {
-        transform: translateX(100%);
-    }
-}
-
-/* =====================================
 HERO PRINCIPAL
 Imagen de portada y presentación
 ===================================== */
