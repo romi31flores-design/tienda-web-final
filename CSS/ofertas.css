@@ -109,7 +109,7 @@
     color: #B89B7A;
 }
 /* =====================================
-   BOTÓN AGREGAR AL CARRITO EN OFERTAS
+BOTÓN AGREGAR AL CARRITO EN OFERTAS
 ===================================== */
 
 .oferta-card .btn-agregar {
@@ -129,6 +129,26 @@
 .oferta-card .btn-agregar:hover {
     background-color: #9E8060;
     transition: 0.3s;
+}
+
+.oferta-card .btn-producto {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 10px 22px;
+
+    background-color: #B89B7A;
+    color: white;
+
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.oferta-card .btn-producto:hover {
+    background-color: #9E8060;
+    transform: translateY(-5px);
 }
 /* =====================================
     RESPONSIVE
