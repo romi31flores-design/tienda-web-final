@@ -1,99 +1,194 @@
 <!DOCTYPE html>
-
 <html lang="es">
 
 <head>
-    <!-- Configuración básica -->
+
+    <!-- CONFIGURACIÓN BÁSICA -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Mis Pedidos - Bebote Indumentaria</title>
 
-```
-<!-- Hojas de estilo -->
-<link rel="stylesheet" href="../CSS/general.css">
-<link rel="stylesheet" href="../CSS/pedidos.css">
+    <!-- HOJAS DE ESTILO -->
+    <link rel="stylesheet" href="../CSS/general.css">
+    <link rel="stylesheet" href="../CSS/pedidos.css">
 
-<!-- Iconos Font Awesome -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-```
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 </head>
 
 <body>
 
-```
-<!-- ENCABEZADO -->
-<header>
-    <h1>INDUMENTARIA PARA BEBOTES</h1>
-    <p>Moda infantil con estilo y diversión</p>
-</header>
+    <!-- HEADER -->
+    <header>
+        <h1>INDUMENTARIA PARA BEBOTES</h1>
+        <p>Moda infantil con estilo y diversión</p>
+    </header>
 
-<!-- MENÚ DE NAVEGACIÓN -->
-<nav>
-    <a href="index.html"><i class="fa-solid fa-house"></i> Inicio</a>
-    <a href="niñas.html"><i class="fa-solid fa-child-dress"></i> Niñas</a>
-    <a href="niños.html"><i class="fa-solid fa-child"></i> Niños</a>
-    <a href="ofertas.html"><i class="fa-solid fa-tags"></i> Ofertas</a>
-    <a href="contacto.html"><i class="fa-solid fa-phone"></i> Contacto</a>
+    <!-- MENÚ DE NAVEGACIÓN -->
+    <nav>
 
-    <a href="login.html" class="icono-nav">
-        <i class="fa-solid fa-user"></i>
-    </a>
+        <a href="index.html">
+            <i class="fa-solid fa-house"></i> Inicio
+        </a>
 
-    <a href="pedidos.html" class="icono-nav">
-        <i class="fa-solid fa-box"></i>
-    </a>
+        <a href="niñas.html">
+            <i class="fa-solid fa-child-dress"></i> Niñas
+        </a>
 
-    <a href="carrito.html" class="icono-nav">
-        <i class="fa-solid fa-cart-shopping"></i>
-        <span id="contador-carrito">0</span>
-    </a>
-</nav>
+        <a href="niños.html">
+            <i class="fa-solid fa-child"></i> Niños
+        </a>
 
-<!-- BANNER DE ENVÍOS -->
-<section class="banner-envio">
-    <p>📦 Envíos gratis a partir de $100.000</p>
-</section>
+        <a href="ofertas.html">
+            <i class="fa-solid fa-tags"></i> Ofertas
+        </a>
 
-<!-- CONTENIDO PRINCIPAL -->
-<main>
+        <a href="contacto.html">
+            <i class="fa-solid fa-phone"></i> Contacto
+        </a>
 
-    <!-- SECCIÓN PEDIDOS -->
-    <section class="pedidos-container">
+        <a href="login.html" class="icono-nav">
+            <i class="fa-solid fa-user"></i>
+        </a>
 
-        <div class="pedidos-box">
+        <a href="pedidos.html" class="icono-nav">
+            <i class="fa-solid fa-box"></i>
+        </a>
 
-            <h2>Mis Pedidos 📦</h2>
-            <p>Consultá el estado de tus compras.</p>
+        <a href="carrito.html" class="icono-nav">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span id="contador-carrito">0</span>
+        </a>
 
-            <!-- MENSAJE CUANDO NO HAY PEDIDOS -->
-            <div class="sin-pedidos">
+    </nav>
 
-                <i class="fa-solid fa-box-open"></i>
+    <!-- BANNER -->
+    <section class="banner-envio">
+        <p>📦 Envíos gratis a partir de $100.000</p>
+    </section>
 
-                <h3>Todavía no tenés pedidos</h3>
+    <!-- CONTENIDO PRINCIPAL -->
+    <main>
 
-                <p>
-                    Cuando realices una compra,
-                    aparecerá acá.
-                </p>
+        <!-- GESTIÓN DE PEDIDOS -->
+        <section class="pedidos-container">
+
+            <h2>Gestión de Pedidos 📦</h2>
+
+            <p>
+                Consultá el estado de tus compras y realizá el seguimiento
+                de todos tus pedidos.
+            </p>
+
+            <!-- TARJETAS RESUMEN -->
+            <div class="resumen-pedidos">
+
+                <article class="card-resumen">
+                    <i class="fa-solid fa-box-open"></i>
+                    <h3>3</h3>
+                    <p>Pedidos realizados</p>
+                </article>
+
+                <article class="card-resumen">
+                    <i class="fa-solid fa-clock"></i>
+                    <h3>1</h3>
+                    <p>En preparación</p>
+                </article>
+
+                <article class="card-resumen">
+                    <i class="fa-solid fa-truck"></i>
+                    <h3>1</h3>
+                    <p>En camino</p>
+                </article>
+
+                <article class="card-resumen">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <h3>1</h3>
+                    <p>Entregado</p>
+                </article>
 
             </div>
+
+            <!-- TABLA DE PEDIDOS -->
+            <table>
+
+                <thead>
+
+                    <tr>
+                        <th>Pedido</th>
+                        <th>Producto</th>
+                        <th>Cantidad</th>
+                        <th>Estado</th>
+                        <th>Fecha</th>
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>#001</td>
+                        <td>Vestido Darlon</td>
+                        <td>1</td>
+                        <td>En preparación</td>
+                        <td>26/06/2026</td>
+                    </tr>
+
+                    <tr>
+                        <td>#002</td>
+                        <td>Abrigo Kids</td>
+                        <td>2</td>
+                        <td>En camino</td>
+                        <td>25/06/2026</td>
+                    </tr>
+
+                    <tr>
+                        <td>#003</td>
+                        <td>Pack de Medias</td>
+                        <td>3</td>
+                        <td>Entregado</td>
+                        <td>22/06/2026</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
 
             <!-- BOTÓN VOLVER -->
             <a href="index.html" class="volver-btn">
                 Volver a la tienda
             </a>
 
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div>
+            <h3>Bebote Indumentaria</h3>
+            <p>Moda infantil cómoda, tierna y moderna.</p>
         </div>
 
-    </section>
+        <div>
+            <h3>Contacto</h3>
+            <p>WhatsApp: 387 222 3309</p>
+            <p>Instagram: @bebote.indumentaria</p>
+        </div>
 
-</main>
+        <div>
+            <h3>Horarios</h3>
+            <p>Lunes a sábado</p>
+            <p>09:00 a 21:00 hs</p>
+        </div>
 
-<!-- JAVASCRIPT -->
-<script src="JS/pedidos.js"></script>
-```
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script src="../JAVA-SCRIPT/carrito.js"></script>
 
 </body>
 
