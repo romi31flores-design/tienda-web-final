@@ -5,11 +5,12 @@
 .pedidos-container {
     min-height: 100vh;
 
-    background-image: linear-gradient(
-        rgba(250, 247, 242, 0.75),
-        rgba(250, 247, 242, 0.75)
-    ),
-    url("../img/portada.jpg");
+    background-image:
+        linear-gradient(
+            rgba(250, 247, 242, 0.75),
+            rgba(250, 247, 242, 0.75)
+        ),
+        url("../img/portada.jpg");
 
     background-size: cover;
     background-position: center;
@@ -23,28 +24,145 @@
 }
 
 /* =====================================
-    CAJA DE PEDIDOS
+    CAJA PRINCIPAL
 ===================================== */
 
 .pedidos-box {
+
     background-color: white;
 
-    width: 650px;
+    width: 100%;
+    max-width: 1000px;
 
     padding: 40px;
 
     border-radius: 25px;
 
-    box-shadow: 0px 6px 20px rgba(0,0,0,0.15);
+    box-shadow: 0 6px 20px rgba(0,0,0,.15);
 
     text-align: center;
+
+}
+
+.pedidos-box h2{
+    color:#333;
+    margin-bottom:10px;
+}
+
+.pedidos-box > p{
+    color:#666;
+    margin-bottom:35px;
 }
 
 /* =====================================
-    TARJETA DE PEDIDO
+    TARJETAS RESUMEN
+===================================== */
+
+.resumen-pedidos{
+
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+
+    margin-bottom:40px;
+
+}
+
+.card-resumen{
+
+    width:180px;
+
+    background:#F5EDE3;
+
+    border-radius:18px;
+
+    padding:25px;
+
+    box-shadow:0 4px 12px rgba(0,0,0,.08);
+
+}
+
+.card-resumen i{
+
+    font-size:28px;
+
+    color:#B89B7A;
+
+    margin-bottom:12px;
+
+}
+
+.card-resumen h3{
+
+    font-size:30px;
+
+    color:#333;
+
+}
+
+.card-resumen p{
+
+    color:#666;
+
+    margin-top:10px;
+
+}
+
+/* =====================================
+    TABLA
+===================================== */
+
+.tabla-contenedor{
+
+    overflow-x:auto;
+
+}
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    margin-top:20px;
+
+}
+
+thead{
+
+    background:#B89B7A;
+
+    color:white;
+
+}
+
+th{
+
+    padding:15px;
+
+}
+
+td{
+
+    padding:15px;
+
+    border-bottom:1px solid #eee;
+
+}
+
+tbody tr:hover{
+
+    background:#F9F4EE;
+
+}
+
+/* =====================================
+    TARJETA DE PEDIDO (por si la usás)
 ===================================== */
 
 .pedido-card {
+
     background-color: #F5EDE3;
 
     padding: 20px;
@@ -54,13 +172,11 @@
     border-radius: 18px;
 
     text-align: left;
+
 }
 
-/* =====================================
-    ESTADO DEL PEDIDO
-===================================== */
-
 .pedido-card span {
+
     display: block;
 
     margin-top: 10px;
@@ -68,13 +184,15 @@
     font-weight: bold;
 
     color: #8B6F57;
+
 }
 
 /* =====================================
-    MENSAJE SIN PEDIDOS
+    SIN PEDIDOS
 ===================================== */
 
 .sin-pedidos {
+
     background-color: #F5EDE3;
 
     padding: 40px;
@@ -84,18 +202,17 @@
     border-radius: 18px;
 
     text-align: center;
+
 }
 
-/* =====================================
-    ÍCONO SIN PEDIDOS
-===================================== */
-
 .sin-pedidos i {
+
     font-size: 45px;
 
     color: #8B6F57;
 
     margin-bottom: 15px;
+
 }
 
 /* =====================================
@@ -103,41 +220,66 @@
 ===================================== */
 
 .volver-btn {
-    display: inline-block;
 
-    margin-top: 30px;
+    display:inline-block;
 
-    padding: 14px 25px;
+    margin-top:35px;
 
-    background-color: #B89B7A;
+    padding:14px 28px;
 
-    color: white;
+    background:#B89B7A;
 
-    text-decoration: none;
+    color:white;
 
-    border-radius: 20px;
+    text-decoration:none;
 
-    font-weight: bold;
+    border-radius:20px;
+
+    font-weight:bold;
+
+    transition:.3s;
+
 }
 
-/* =====================================
-    EFECTO HOVER
-===================================== */
+.volver-btn:hover{
 
-.volver-btn:hover {
-    background-color: #9E8060;
-    transition: 0.3s;
+    background:#9E8060;
+
+    transform:scale(1.03);
+
 }
 
 /* =====================================
     RESPONSIVE
 ===================================== */
 
-@media (max-width: 768px) {
+@media (max-width:768px){
 
-    .pedidos-box {
-        width: 95%;
-        padding: 25px;
+    .pedidos-box{
+
+        width:95%;
+
+        padding:25px;
+
+    }
+
+    .card-resumen{
+
+        width:100%;
+
+    }
+
+    table{
+
+        font-size:14px;
+
+    }
+
+    th,
+    td{
+
+        padding:10px;
+
     }
 
 }
