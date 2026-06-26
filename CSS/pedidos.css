@@ -281,5 +281,28 @@ tbody tr:hover{
         padding:10px;
 
     }
-
+/*
+====================================
+BOTON FINALIZAR PEDIDO
+===================================
+===== */
+.acciones-pedidos {
+    margin-top: 25px;
+    text-align: center;
+} 
+.btn-finalizar{
+    padding: 15px 35px;
+    background-color: #6BA368;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.btn-finalizar:hover{
+    background-color: #5b9158;
+    transform: scale(1.05)
+}
 }
