@@ -1,0 +1,206 @@
+/* =====================================
+   CONTENEDOR PRINCIPAL
+===================================== */
+
+.finalizar-container {
+    min-height: 100vh;
+    background-color: #FAF7F2;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 50px 20px;
+}
+
+/* CAJA DEL FORMULARIO */
+
+.finalizar-box {
+    background-color: white;
+    width: 700px;
+    padding: 40px;
+    border-radius: 25px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    text-align: center;
+}
+
+/* FORMULARIO */
+
+#form-finalizar {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+#form-finalizar h3 {
+    color: #5C4632;
+    margin-top: 15px;
+}
+
+#form-finalizar label {
+    text-align: left;
+    font-weight: bold;
+    color: #333;
+}
+
+#form-finalizar input,
+#form-finalizar select {
+    padding: 12px;
+    border: 2px solid #E8DCCB;
+    border-radius: 12px;
+    outline: none;
+}
+
+/* TARJETA VENCIMIENTO Y CÓDIGO */
+
+.grupo-tarjeta {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+/* TOTAL */
+
+.resumen-compra {
+    background-color: #F5EDE3;
+    padding: 20px;
+    border-radius: 18px;
+    margin-top: 15px;
+}
+
+.resumen-compra p {
+    font-size: 25px;
+    font-weight: bold;
+    color: #8B6F57;
+}
+
+/* BOTÓN CONFIRMAR */
+
+.btn-confirmar {
+    padding: 15px;
+    background-color: #6BA368;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-confirmar:hover {
+    background-color: #5A9158;
+    transform: scale(1.03);
+    transition: 0.3s;
+}
+
+/* MENSAJE FINAL */
+
+#mensaje-finalizar {
+    font-weight: bold;
+    color: #6BA368;
+    margin-top: 10px;
+}
+/* =====================================
+MODAL COMPRA REALIZADA
+===================================== */
+
+.modal-compra {
+    display: none;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.45);
+
+    justify-content: center;
+    align-items: center;
+
+    z-index: 1000;
+}
+
+.modal-contenido {
+    background-color: #FAF7F2;
+
+    width: 90%;
+    max-width: 450px;
+
+    padding: 40px;
+
+    border-radius: 25px;
+
+    text-align: center;
+
+    box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+
+    animation: aparecerModal 0.4s ease;
+}
+
+.modal-icono i {
+    font-size: 60px;
+    color: #6BA368;
+
+    margin-bottom: 15px;
+}
+
+.modal-contenido h2 {
+    color: #5C4632;
+    margin-bottom: 15px;
+}
+
+.modal-contenido p {
+    color: #555;
+    margin-bottom: 12px;
+}
+
+.btn-modal {
+    display: inline-block;
+
+    margin-top: 20px;
+
+    padding: 14px 28px;
+
+    background-color: #B89B7A;
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 20px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.btn-modal:hover {
+    background-color: #9E8060;
+    transform: scale(1.03);
+}
+
+@keyframes aparecerModal {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+    .finalizar-box {
+        width: 95%;
+        padding: 25px;
+    }
+
+    .grupo-tarjeta {
+        grid-template-columns: 1fr;
+    }
+}

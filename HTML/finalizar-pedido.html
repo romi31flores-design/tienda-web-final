@@ -1,0 +1,27 @@
+/* =====================================
+   FINALIZAR PEDIDO
+===================================== */
+
+const formulario = document.querySelector("#form-finalizar");
+
+const mensaje = document.querySelector("#mensaje-finalizar");
+
+const modalCompra = document.querySelector("#modal-compra");
+
+if (formulario) {
+
+    formulario.addEventListener("submit", function(evento) {
+
+        evento.preventDefault();
+
+        mensaje.textContent = "✅ Compra realizada correctamente.";
+        mensaje.style.color = "green";
+        mensaje.style.fontWeight = "bold";
+
+        modalCompra.style.display = "flex";
+
+        formulario.reset();
+
+    });
+
+}
