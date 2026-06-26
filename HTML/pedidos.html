@@ -2,20 +2,17 @@
 <html lang="es">
 
 <head>
-
     <!-- CONFIGURACIÓN BÁSICA -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Mis Pedidos - Bebote Indumentaria</title>
 
     <!-- HOJAS DE ESTILO -->
     <link rel="stylesheet" href="../CSS/general.css">
     <link rel="stylesheet" href="../CSS/pedidos.css">
 
-    <!-- FONT AWESOME -->
+    <!-- ICONOS FONT AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
 </head>
 
 <body>
@@ -28,26 +25,11 @@
 
     <!-- MENÚ DE NAVEGACIÓN -->
     <nav>
-
-        <a href="index.html">
-            <i class="fa-solid fa-house"></i> Inicio
-        </a>
-
-        <a href="niñas.html">
-            <i class="fa-solid fa-child-dress"></i> Niñas
-        </a>
-
-        <a href="niños.html">
-            <i class="fa-solid fa-child"></i> Niños
-        </a>
-
-        <a href="ofertas.html">
-            <i class="fa-solid fa-tags"></i> Ofertas
-        </a>
-
-        <a href="contacto.html">
-            <i class="fa-solid fa-phone"></i> Contacto
-        </a>
+        <a href="index.html"><i class="fa-solid fa-house"></i> Inicio</a>
+        <a href="niñas.html"><i class="fa-solid fa-child-dress"></i> Niñas</a>
+        <a href="niños.html"><i class="fa-solid fa-child"></i> Niños</a>
+        <a href="ofertas.html"><i class="fa-solid fa-tags"></i> Ofertas</a>
+        <a href="contacto.html"><i class="fa-solid fa-phone"></i> Contacto</a>
 
         <a href="login.html" class="icono-nav">
             <i class="fa-solid fa-user"></i>
@@ -61,7 +43,6 @@
             <i class="fa-solid fa-cart-shopping"></i>
             <span id="contador-carrito">0</span>
         </a>
-
     </nav>
 
     <!-- BANNER -->
@@ -72,109 +53,118 @@
     <!-- CONTENIDO PRINCIPAL -->
     <main>
 
-        <!-- GESTIÓN DE PEDIDOS -->
+        <!-- SECCIÓN GESTIÓN DE PEDIDOS -->
         <section class="pedidos-container">
 
-            <h2>Gestión de Pedidos 📦</h2>
+            <div class="pedidos-box">
 
-            <p>
-                Consultá el estado de tus compras y realizá el seguimiento
-                de todos tus pedidos.
-            </p>
+                <!-- TÍTULO -->
+                <h2>Gestión de Pedidos 📦</h2>
 
-            <!-- TARJETAS RESUMEN -->
-            <div class="resumen-pedidos">
+                <p>
+                    Consultá el estado de tus compras y realizá el seguimiento
+                    de todos tus pedidos.
+                </p>
 
-                <article class="card-resumen">
-                    <i class="fa-solid fa-box-open"></i>
-                    <h3>3</h3>
-                    <p>Pedidos realizados</p>
-                </article>
+                <!-- RESUMEN DE PEDIDOS -->
+                <div class="resumen-pedidos">
 
-                <article class="card-resumen">
-                    <i class="fa-solid fa-clock"></i>
-                    <h3>1</h3>
-                    <p>En preparación</p>
-                </article>
+                    <article class="card-resumen">
+                        <i class="fa-solid fa-box-open"></i>
+                        <h3>3</h3>
+                        <p>Pedidos realizados</p>
+                    </article>
 
-                <article class="card-resumen">
-                    <i class="fa-solid fa-truck"></i>
-                    <h3>1</h3>
-                    <p>En camino</p>
-                </article>
+                    <article class="card-resumen">
+                        <i class="fa-solid fa-clock"></i>
+                        <h3>1</h3>
+                        <p>En preparación</p>
+                    </article>
 
-                <article class="card-resumen">
-                    <i class="fa-solid fa-circle-check"></i>
-                    <h3>1</h3>
-                    <p>Entregado</p>
-                </article>
+                    <article class="card-resumen">
+                        <i class="fa-solid fa-truck"></i>
+                        <h3>1</h3>
+                        <p>En camino</p>
+                    </article>
+
+                    <article class="card-resumen">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <h3>1</h3>
+                        <p>Entregado</p>
+                    </article>
+
+                </div>
+
+                <!-- TABLA DE PEDIDOS -->
+                <div class="tabla-contenedor">
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Pedido</th>
+                                <th>Producto</th>
+                                <th>Cantidad</th>
+                                <th>Precio</th>
+                                <th>Total</th>
+                                <th>Estado</th>
+                                <th>Fecha</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>#001</td>
+                                <td>Vestido Darlon</td>
+                                <td>1</td>
+                                <td>$25.000</td>
+                                <td>$25.000</td>
+                                <td>En preparación</td>
+                                <td>26/06/2026</td>
+                            </tr>
+
+                            <tr>
+                                <td>#002</td>
+                                <td>Abrigo Kids</td>
+                                <td>2</td>
+                                <td>$45.000</td>
+                                <td>$90.000</td>
+                                <td>En camino</td>
+                                <td>25/06/2026</td>
+                            </tr>
+
+                            <tr>
+                                <td>#003</td>
+                                <td>Pack de Medias</td>
+                                <td>3</td>
+                                <td>$8.000</td>
+                                <td>$24.000</td>
+                                <td>Entregado</td>
+                                <td>22/06/2026</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+
+                <!-- TOTAL Y ACCIONES DEL PEDIDO -->
+                <div class="acciones-finales">
+
+                    <div class="total-pedidos">
+                        <h3>Total general</h3>
+                        <p>$139.000</p>
+                    </div>
+
+                    <button type="button" class="btn-finalizar">
+                        Finalizar pedido
+                    </button>
+
+                    <a href="index.html" class="volver-btn">
+                        Volver a la tienda
+                    </a>
+
+                </div>
 
             </div>
-
-            <!-- TABLA DE PEDIDOS -->
-            <table>
-
-                <thead>
-
-                    <tr>
-                        <th>Pedido</th>
-                        <th>Producto</th>
-                        <th>Cantidad</th>
-                        <th>Precio</th>
-                        <th>Toltal</th>
-                        <th>Estado</th>
-                        <th>Fecha</th>
-                    </tr>
-
-                </thead>
-
-                <tbody>
-
-                    <tr>
-                        <td>#001</td>
-                        <td>Vestido Darlon</td>
-                        <td>1</td>
-                        <th>$25.000</th>
-                        <th>$25.000</th>
-                        <td>En preparación</td>
-                        <td>26/06/2026</td>
-                    </tr>
-
-                    <tr>
-                        <td>#002</td>
-                        <td>Abrigo Kids</td>
-                        <td>2</td>
-                        <th>$45.000</th>
-                        <th>$90.000</th>
-                        <td>En camino</td>
-                        <td>25/06/2026</td>
-                    </tr>
-
-                    <tr>
-                        <td>#003</td>
-                        <td>Pack de Medias</td>
-                        <td>3</td>
-                        <th>$8.000</th>
-                        <th>$24.000</th>
-                        <td>Entregado</td>
-                        <td>22/06/2026</td>
-                    </tr>
-                
-
-            </table>
-            <div class="total-pedidos">
-                    <h3>Total general $139.00</h3>
-            </div>
-            <div class="acciones-pedidos">
-                <button class="btn-finalizar">
-                    Finalizar pedido
-                </button>
-            </div>
-                </tbody>
-            <!-- BOTÓN VOLVER -->
-            <a href="index.html" class="volver-btn">
-                Volver a la tienda
-            </a>
 
         </section>
 
@@ -204,6 +194,7 @@
 
     <!-- JAVASCRIPT -->
     <script src="../JAVA-SCRIPT/carrito.js"></script>
+    <script src="../JAVA-SCRIPT/pedidos.js"></script>
 
 </body>
 
