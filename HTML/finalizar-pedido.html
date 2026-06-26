@@ -2,187 +2,275 @@
 <html lang="es">
 
 <head>
+    <!-- CONFIGURACIÓN BÁSICA -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Finalizar Pedido - Bebote Indumentaria</title>
 
+    <!-- HOJAS DE ESTILO -->
     <link rel="stylesheet" href="../CSS/general.css">
     <link rel="stylesheet" href="../CSS/finalizar-pedido.css">
 
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- ICONOS FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
 
-<header>
-    <h1>INDUMENTARIA PARA BEBOTES</h1>
-    <p>Moda infantil con estilo y diversión</p>
-</header>
+    <!-- HEADER -->
+    <header>
+        <h1>INDUMENTARIA PARA BEBOTES</h1>
+        <p>Moda infantil con estilo y diversión</p>
+    </header>
 
-<nav>
+    <!-- MENÚ DE NAVEGACIÓN -->
+    <nav>
 
-    <a href="index.html">
-        <i class="fa-solid fa-house"></i> Inicio
-    </a>
+        <a href="index.html">
+            <i class="fa-solid fa-house"></i> Inicio
+        </a>
 
-    <a href="niñas.html">
-        <i class="fa-solid fa-child-dress"></i> Niñas
-    </a>
+        <a href="niñas.html">
+            <i class="fa-solid fa-child-dress"></i> Niñas
+        </a>
 
-    <a href="niños.html">
-        <i class="fa-solid fa-child"></i> Niños
-    </a>
+        <a href="niños.html">
+            <i class="fa-solid fa-child"></i> Niños
+        </a>
 
-    <a href="ofertas.html">
-        <i class="fa-solid fa-tags"></i> Ofertas
-    </a>
+        <a href="ofertas.html">
+            <i class="fa-solid fa-tags"></i> Ofertas
+        </a>
 
-    <a href="contacto.html">
-        <i class="fa-solid fa-phone"></i> Contacto
-    </a>
+        <a href="contacto.html">
+            <i class="fa-solid fa-phone"></i> Contacto
+        </a>
 
-</nav>
+        <a href="login.html" class="icono-nav">
+            <i class="fa-solid fa-user"></i>
+        </a>
 
-<section class="banner-envio">
-    <p>📦 Envíos gratis a partir de $100.000</p>
-</section>
+        <a href="pedidos.html" class="icono-nav">
+            <i class="fa-solid fa-box"></i>
+        </a>
 
-<main>
+        <a href="carrito.html" class="icono-nav">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span id="contador-carrito">0</span>
+        </a>
 
-<section class="finalizar-container">
+    </nav>
 
-<div class="finalizar-box">
+    <!-- BANNER -->
+    <section class="banner-envio">
+        <p>📦 Envíos gratis a partir de $100.000</p>
+    </section>
 
-<h2>🛒 Finalizar Pedido</h2>
+    <!-- CONTENIDO PRINCIPAL -->
+    <main>
 
-<p>Completá tus datos para confirmar la compra.</p>
+        <!-- FORMULARIO DE FINALIZACIÓN -->
+        <section class="finalizar-container">
 
-<form id="form-finalizar">
+            <div class="finalizar-box">
 
-<h3>Datos personales</h3>
+                <h2>🛒 Finalizar Pedido</h2>
 
-<input type="text" placeholder="Nombre completo" required>
+                <p>Completá tus datos para confirmar la compra.</p>
 
-<input type="email" placeholder="Correo electrónico" required>
+                <form id="form-finalizar">
 
-<input type="tel" placeholder="Teléfono" required>
+                    <!-- DATOS PERSONALES -->
+                    <h3>Datos personales</h3>
 
-<h3>Datos de envío</h3>
+                    <label for="nombre">Nombre completo</label>
+                    <input
+                        type="text"
+                        id="nombre"
+                        placeholder="Ingresá tu nombre completo"
+                        required>
 
-<input type="text" placeholder="Dirección" required>
+                    <label for="email">Correo electrónico</label>
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Ingresá tu correo"
+                        required>
 
-<select required>
-<option value="">Método de envío</option>
-<option>Retiro en tienda</option>
-<option>Correo Argentino</option>
-<option>Andreani</option>
-</select>
+                    <label for="telefono">Teléfono</label>
+                    <input
+                        type="tel"
+                        id="telefono"
+                        placeholder="Ej: 387 123 4567"
+                        required>
 
-<h3>Datos de pago</h3>
+                    <!-- DATOS DE ENVÍO -->
+                    <h3>Datos de envío</h3>
 
-<input type="text" placeholder="Titular de la tarjeta" required>
+                    <label for="direccion">Dirección de entrega</label>
+                    <input
+                        type="text"
+                        id="direccion"
+                        placeholder="Calle, número, barrio"
+                        required>
 
-<input type="text" placeholder="Número de tarjeta" maxlength="19" required>
+                    <label for="envio">Método de envío</label>
+                    <select id="envio" required>
+                        <option value="">Seleccionar método</option>
+                        <option value="retiro">Retiro en tienda</option>
+                        <option value="correo">Correo Argentino</option>
+                        <option value="andreani">Andreani</option>
+                    </select>
 
-<div class="fila">
+                    <!-- DATOS DE PAGO -->
+                    <h3>Datos de pago</h3>
 
-<input type="text" placeholder="MM/AA" required>
+                    <label for="titular">Titular de la tarjeta</label>
+                    <input
+                        type="text"
+                        id="titular"
+                        placeholder="Nombre como figura en la tarjeta"
+                        required>
 
-<input type="text" placeholder="CVV" maxlength="3" required>
+                    <label for="tarjeta">Número de tarjeta</label>
+                    <input
+                        type="text"
+                        id="tarjeta"
+                        placeholder="0000 0000 0000 0000"
+                        maxlength="19"
+                        required>
 
-</div>
+                    <div class="fila">
 
-<div class="total-box">
+                        <div>
+                            <label for="vencimiento">Vencimiento</label>
+                            <input
+                                type="text"
+                                id="vencimiento"
+                                placeholder="MM/AA"
+                                maxlength="5"
+                                required>
+                        </div>
 
-<h3>Total a pagar</h3>
+                        <div>
+                            <label for="codigo">Código</label>
+                            <input
+                                type="password"
+                                id="codigo"
+                                placeholder="CVV"
+                                maxlength="3"
+                                required>
+                        </div>
 
-<p>$139.000</p>
+                    </div>
 
-</div>
+                    <!-- TOTAL -->
+                    <div class="total-box">
+                        <h3>Total a pagar</h3>
+                        <p>$139.000</p>
+                    </div>
 
-<button type="submit" class="btn-confirmar">
-Confirmar compra
-</button>
+                    <!-- BOTÓN CONFIRMAR -->
+                    <button type="submit" class="btn-confirmar">
+                        Confirmar compra
+                    </button>
 
-</form>
+                    <p id="mensaje-finalizar"></p>
 
-<a href="pedidos.html" class="volver-btn">
-Volver a pedidos
-</a>
+                </form>
 
-</div>
+                <!-- BOTÓN VOLVER -->
+                <a href="pedidos.html" class="volver-btn">
+                    Volver a pedidos
+                </a>
 
-</section>
+            </div>
 
-</main>
+        </section>
 
-<footer class="footer">
+    </main>
 
-<div>
-<h3>Bebote Indumentaria</h3>
-<p>Moda infantil cómoda, tierna y moderna.</p>
-</div>
+    <!-- FOOTER -->
+    <footer class="footer">
 
-<div>
-<h3>Contacto</h3>
-<p>WhatsApp: 387 222 3309</p>
-<p>Instagram: @bebote.indumentaria</p>
-</div>
+        <div>
+            <h3>Bebote Indumentaria</h3>
+            <p>Moda infantil cómoda, tierna y moderna.</p>
+        </div>
 
-<div>
-<h3>Horarios</h3>
-<p>Lunes a sábado</p>
-<p>09:00 a 21:00 hs</p>
-</div>
+        <div>
+            <h3>Contacto</h3>
+            <p>WhatsApp: 387 222 3309</p>
+            <p>Instagram: @bebote.indumentaria</p>
+        </div>
 
-</footer>
+        <div>
+            <h3>Horarios</h3>
+            <p>Lunes a sábado</p>
+            <p>09:00 a 21:00 hs</p>
+        </div>
 
-<!-- MODAL -->
+    </footer>
 
-<div id="modal-compra" class="modal">
+    <!-- MODAL COMPRA REALIZADA -->
+    <div id="modal-compra" class="modal">
 
-<div class="modal-contenido">
+        <div class="modal-contenido">
 
-<i class="fa-solid fa-circle-check"></i>
+            <i class="fa-solid fa-circle-check"></i>
 
-<h2>¡Compra realizada con éxito!</h2>
+            <h2>¡Compra realizada con éxito!</h2>
 
-<p>
-Muchas gracias por elegir
-<strong>Bebote Indumentaria</strong>.
-</p>
+            <p>
+                Muchas gracias por elegir
+                <strong>Bebote Indumentaria</strong>.
+            </p>
 
-<p>
-Nos comunicaremos con vos muy pronto para coordinar el envío.
-</p>
+            <p>
+                Nos comunicaremos con vos muy pronto para coordinar el envío.
+            </p>
 
-<button id="cerrar-modal">
-Aceptar
-</button>
+            <button id="cerrar-modal" type="button">
+                Aceptar
+            </button>
 
-</div>
+        </div>
 
-</div>
-
-<script src="../JAVA-SCRIPT/finalizar-pedido.js"></script>
-
-<!-- MODAL COMPRA REALIZADA -->
-<div id="modal-compra" class="modal">
-    <div class="modal-contenido">
-        <i class="fa-solid fa-circle-check"></i>
-
-        <h2>¡Compra realizada con éxito!</h2>
-
-        <p>Muchas gracias por elegir <strong>Bebote Indumentaria</strong>.</p>
-
-        <p>Nos comunicaremos con vos para coordinar el envío.</p>
-
-        <button id="cerrar-modal">Aceptar</button>
     </div>
-</div>
 
-<script src="../JAVA-SCRIPT/finalizar-pedido.js"></script>
+    <!-- JAVASCRIPT -->
+    <script>
+        const formularioFinalizar = document.querySelector("#form-finalizar");
+        const modalCompra = document.querySelector("#modal-compra");
+        const cerrarModal = document.querySelector("#cerrar-modal");
+
+        if (formularioFinalizar) {
+
+            formularioFinalizar.addEventListener("submit", function(evento) {
+
+                evento.preventDefault();
+
+                modalCompra.style.display = "flex";
+
+                formularioFinalizar.reset();
+
+            });
+
+        }
+
+        if (cerrarModal) {
+
+            cerrarModal.addEventListener("click", function() {
+
+                modalCompra.style.display = "none";
+
+                window.location.href = "index.html";
+
+            });
+
+        }
+    </script>
+
 </body>
 
 </html>
