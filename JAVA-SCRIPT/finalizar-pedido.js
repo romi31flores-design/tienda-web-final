@@ -38,7 +38,7 @@ if (cerrarModal) {
         modalCompra.style.display = "none";
 
         /* Recién ahí vuelve al inicio */
-        window.location.href = "index.html";
+        window.location.href = "../index.html";
 
     });
 
