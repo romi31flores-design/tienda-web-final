@@ -1,5 +1,5 @@
 /* =====================================
-   CARRITO DE COMPRAS
+CARRITO DE COMPRAS
 ===================================== */
 
 const contadorCarrito = document.querySelector("#contador-carrito");

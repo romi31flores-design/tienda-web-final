@@ -1,6 +1,6 @@
 /* =====================================
-   VALIDACIÓN DEL FORMULARIO DE CONTACTO
-   Controla nombre, email y mensaje
+    VALIDACIÓN DEL FORMULARIO DE CONTACTO
+    Controla nombre, email y mensaje
 ===================================== */
 
 /* Seleccionamos el formulario */
@@ -10,7 +10,7 @@ const formularioContacto = document.querySelector("#form-contacto");
 const mensajeContacto = document.querySelector("#mensaje-contacto");
 
 /* =====================================
-   EVENTO SUBMIT
+    EVENTO SUBMIT
 ===================================== */
 
 if (formularioContacto) {
