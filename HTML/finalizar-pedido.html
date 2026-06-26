@@ -1,27 +1,188 @@
-/* =====================================
-   FINALIZAR PEDIDO
-===================================== */
+<!DOCTYPE html>
+<html lang="es">
 
-const formulario = document.querySelector("#form-finalizar");
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finalizar Pedido - Bebote Indumentaria</title>
 
-const mensaje = document.querySelector("#mensaje-finalizar");
+    <link rel="stylesheet" href="../CSS/general.css">
+    <link rel="stylesheet" href="../CSS/finalizar-pedido.css">
 
-const modalCompra = document.querySelector("#modal-compra");
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
 
-if (formulario) {
+<body>
 
-    formulario.addEventListener("submit", function(evento) {
+<header>
+    <h1>INDUMENTARIA PARA BEBOTES</h1>
+    <p>Moda infantil con estilo y diversión</p>
+</header>
 
-        evento.preventDefault();
+<nav>
 
-        mensaje.textContent = "✅ Compra realizada correctamente.";
-        mensaje.style.color = "green";
-        mensaje.style.fontWeight = "bold";
+    <a href="index.html">
+        <i class="fa-solid fa-house"></i> Inicio
+    </a>
 
-        modalCompra.style.display = "flex";
+    <a href="niñas.html">
+        <i class="fa-solid fa-child-dress"></i> Niñas
+    </a>
 
-        formulario.reset();
+    <a href="niños.html">
+        <i class="fa-solid fa-child"></i> Niños
+    </a>
 
-    });
+    <a href="ofertas.html">
+        <i class="fa-solid fa-tags"></i> Ofertas
+    </a>
 
-}
+    <a href="contacto.html">
+        <i class="fa-solid fa-phone"></i> Contacto
+    </a>
+
+</nav>
+
+<section class="banner-envio">
+    <p>📦 Envíos gratis a partir de $100.000</p>
+</section>
+
+<main>
+
+<section class="finalizar-container">
+
+<div class="finalizar-box">
+
+<h2>🛒 Finalizar Pedido</h2>
+
+<p>Completá tus datos para confirmar la compra.</p>
+
+<form id="form-finalizar">
+
+<h3>Datos personales</h3>
+
+<input type="text" placeholder="Nombre completo" required>
+
+<input type="email" placeholder="Correo electrónico" required>
+
+<input type="tel" placeholder="Teléfono" required>
+
+<h3>Datos de envío</h3>
+
+<input type="text" placeholder="Dirección" required>
+
+<select required>
+<option value="">Método de envío</option>
+<option>Retiro en tienda</option>
+<option>Correo Argentino</option>
+<option>Andreani</option>
+</select>
+
+<h3>Datos de pago</h3>
+
+<input type="text" placeholder="Titular de la tarjeta" required>
+
+<input type="text" placeholder="Número de tarjeta" maxlength="19" required>
+
+<div class="fila">
+
+<input type="text" placeholder="MM/AA" required>
+
+<input type="text" placeholder="CVV" maxlength="3" required>
+
+</div>
+
+<div class="total-box">
+
+<h3>Total a pagar</h3>
+
+<p>$139.000</p>
+
+</div>
+
+<button type="submit" class="btn-confirmar">
+Confirmar compra
+</button>
+
+</form>
+
+<a href="pedidos.html" class="volver-btn">
+Volver a pedidos
+</a>
+
+</div>
+
+</section>
+
+</main>
+
+<footer class="footer">
+
+<div>
+<h3>Bebote Indumentaria</h3>
+<p>Moda infantil cómoda, tierna y moderna.</p>
+</div>
+
+<div>
+<h3>Contacto</h3>
+<p>WhatsApp: 387 222 3309</p>
+<p>Instagram: @bebote.indumentaria</p>
+</div>
+
+<div>
+<h3>Horarios</h3>
+<p>Lunes a sábado</p>
+<p>09:00 a 21:00 hs</p>
+</div>
+
+</footer>
+
+<!-- MODAL -->
+
+<div id="modal-compra" class="modal">
+
+<div class="modal-contenido">
+
+<i class="fa-solid fa-circle-check"></i>
+
+<h2>¡Compra realizada con éxito!</h2>
+
+<p>
+Muchas gracias por elegir
+<strong>Bebote Indumentaria</strong>.
+</p>
+
+<p>
+Nos comunicaremos con vos muy pronto para coordinar el envío.
+</p>
+
+<button id="cerrar-modal">
+Aceptar
+</button>
+
+</div>
+
+</div>
+
+<script src="../JAVA-SCRIPT/finalizar-pedido.js"></script>
+
+<!-- MODAL COMPRA REALIZADA -->
+<div id="modal-compra" class="modal">
+    <div class="modal-contenido">
+        <i class="fa-solid fa-circle-check"></i>
+
+        <h2>¡Compra realizada con éxito!</h2>
+
+        <p>Muchas gracias por elegir <strong>Bebote Indumentaria</strong>.</p>
+
+        <p>Nos comunicaremos con vos para coordinar el envío.</p>
+
+        <button id="cerrar-modal">Aceptar</button>
+    </div>
+</div>
+
+<script src="../JAVA-SCRIPT/finalizar-pedido.js"></script>
+</body>
+
+</html>
