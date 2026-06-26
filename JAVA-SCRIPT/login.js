@@ -1,7 +1,7 @@
 /* =====================================
-   VALIDACIÓN DEL LOGIN
-   Verifica que los campos no estén vacíos
-   y que el correo tenga un formato válido.
+    VALIDACIÓN DEL LOGIN
+    Verifica que los campos no estén vacíos
+    y que el correo tenga un formato válido.
 ===================================== */
 
 /* Seleccionamos el formulario */
@@ -12,7 +12,7 @@ const correo = document.querySelector('input[type="email"]');
 const contraseña = document.querySelector('input[type="password"]');
 
 /* =====================================
-   EVENTO SUBMIT
+    EVENTO SUBMIT
 ===================================== */
 
 if (formularioLogin) {
